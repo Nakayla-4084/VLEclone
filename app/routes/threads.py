@@ -22,7 +22,7 @@ def fetch_thread(thread_id):
     except Exception as e:
         return {"error": str(e)}, 400
 
-@thread_bp.post("/forums/create")
+@thread_bp.post("/")
 @jwt_required()
 def add_thread():
     try:
